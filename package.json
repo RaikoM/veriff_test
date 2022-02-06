@@ -5,14 +5,35 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
-    "react-scripts": "3.0.1"
+    "final-form": "^4.20.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-error-boundary": "^3.1.4",
+    "react-final-form": "^6.5.8",
+    "react-hot-toast": "^2.2.0",
+    "react-query": "^3.34.13",
+    "react-scripts": "^5.0.0"
   },
   "devDependencies": {
-    "typescript": "3.8.3"
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.8.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "postcss": "^8.4.6",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.18",
+    "typescript": "^4.5.5"
   },
   "scripts": {
+    "eslint": "eslint src/*.{js,ts,tsx} --config .eslintrc.js",
+    "prettier": "prettier src/*.{js,ts,tsx} --write ",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
