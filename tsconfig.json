@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "types": ["@types/jest"],
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "outDir": "./build/dist",
+    "outDir": "./build",
     "rootDir": "src",
     "sourceMap": true,
     "declaration": true,

@@ -33,7 +33,10 @@ const CheckField = ({ checkId, description, index, input }: CheckProps) => {
   }, [checks, index]);
 
   return (
-    <div className={joinClassNames(disableField ? '' : active === name ? 'bg-highlight' : 'hover:bg-lightgrey', 'py-2 px-4')}>
+    <div
+      className={joinClassNames(disableField ? '' : active === name ? 'bg-highlight' : 'hover:bg-lightgrey', 'py-2 px-4')}
+      id="checkField"
+    >
       <p className={`pb-2 cursor-default ${disableField ? 'opacity-40' : ''}`}>{description}</p>
       <Button
         disabled={disableField}

@@ -14,14 +14,15 @@ After reading the assignment I decided to use external libraries like `react-que
 
 #### Alternative solution if external libraries were not allowed
 - Fetching data - Instead of using `react-query` it could be done via window.fetch which is built in to browsers and managing loading/error state manually inside a try catch block.
-- Managing state - Form could be wrapped in context and field changes would update form state accordingly (focus, blue, change etc...)
+- Managing state - Form could be wrapped in context and field changes would update form state accordingly (focus, blur, change etc...)
 
 ## Notes
 - Currently, all components are together inside components folder. In a bigger application it would make sense to separate presentational and container components
 - Not sure if all checked values after no should also be removed on submit.
 - Not checking case of check value (yes/no) because CheckResult type accepts only lowercase value
+- In real applications api calls would be mocked by `msw` or mock api
 
-## Used tools
+`# Used tools
 
 #### `react-query`
 Used for fetching checks from `fetchChecks` and submitting checks to `submitCheckResults`. <br>
@@ -51,6 +52,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 #### `yarn test`
 Launches the test runner in watch mode.
+
+#### `yarn test:coverage`
+Launches the test runner and displays coverage. Is not running in watch mode.
 
 #### `yarn build`
 Builds the app for production to the `build` folder.

@@ -10,8 +10,7 @@ import Loading from './Loading';
 
 const Checks = () => {
   const { data = [], isLoading } = useQuery('checks', fetchChecks, {
-    // Fetch can sometimes fail, retry 1 time
-    retry: 1,
+    retry: false,
     useErrorBoundary: true,
     refetchOnMount: false,
     refetchOnWindowFocus: false,
