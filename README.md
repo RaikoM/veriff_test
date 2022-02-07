@@ -22,7 +22,7 @@ After reading the assignment I decided to use external libraries like `react-que
 - Not checking case of check value (yes/no) because CheckResult type accepts only lowercase value
 - In real applications api calls would be mocked by `msw` or mock api
 
-`# Used tools
+## Used tools
 
 #### `react-query`
 Used for fetching checks from `fetchChecks` and submitting checks to `submitCheckResults`. <br>
